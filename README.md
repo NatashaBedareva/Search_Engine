@@ -1,6 +1,6 @@
 # search_engine
 ---
-##Поисковая система по файлам
+## Поисковая система по файлам
 #Описание
 ---
 Поисковая система для локальных файлов. Поиск выполняется в соответствии с указанными параметрами (config.json) и выводит результат в конечный файл answers.json
@@ -12,17 +12,17 @@
 5. Далее происходит поиск слов в файлах, создаётся частотный словарь и подсчитывается реаливатность файлов.
 6. Результат поиска вывадтся в answers.json
 
-#Методы
-##ConverterJSON
+# Методы
+## ConverterJSON
 ● std::vector<std::string> GetTextDocuments() считывает конфигурационные данные из JSON,
 ● std::vector<std::string> GetRequests() преобразовывает запросы в формате JSON,
 ● void putAnswers(std::vector<std::vector<RelativeIndex>> answers) формирует ответы в заданном формате JSON.
 
-##InvertedIndex
+## InvertedIndex
 ● void UpdateDocumentBase(std::vector<std::string> input_docs) считывает файлы, полученные из файла конфигурации, создает список слов, а также подсчитывает их количество, индексируя по документам
 ● void GetWordCount(std::string word) метод определяет количество вхождений слова word в загруженной базе документов. word слово, частоту вхождений которого необходимо определить
 
-##SearchServer
+## SearchServer
 ● std::vector<std::vector<RelativeIndex>> Search(std::vector<std::string> queries_input, std::vector<std::string> text_documents) метод обработки поисковых запросов. Возвращает отсортированный список релевантных ответов для заданных запросов
 
 #Начало работы
@@ -30,7 +30,7 @@
 В классе ConverterJSON в методах GetTextDocuments(),GetResponsesLimit(),GetRequests(),putAnswers() укажите пути к данным файлам
 
 Пример файла config.json
-```{json}< >{
+```{
 {
   "config": {
     "name": "SearchEngine",
@@ -45,11 +45,10 @@
     "resources/text05.txt"
   ]
 }
-}
-  }```
+}```
 
 Пример файла requests.json
-```{json}< >{
+```{
 {
   "requests": [
     "curabitur",
@@ -57,5 +56,5 @@
     "non"
   ]
 }
-}}```
+}```
 Затем запустите SearchEngine, результатом работы приложения будет файл answers.json, содержащий список найденных слов, id документов с найдеными словами и их реливатность.
