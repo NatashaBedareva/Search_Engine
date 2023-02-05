@@ -21,16 +21,6 @@ int main() {
     std::map<std::string, std::vector<Entry>> freq_dictionary;
     freq_dictionary=inverted_index.GetFreq_dictionary();
 
-    for (auto [first, second] : freq_dictionary)
-    {
-        std::cout << first << " ";
-        for(int i=0;i<second.size();i++){
-            std::cout <<'{' <<second[i].doc_id << ":"<<second[i].count<<"}";
-        }
-        std::cout<<std::endl;
-
-    }
-
     SearchServer search_server;
     search_server.setFreqDictionari(inverted_index.GetFreq_dictionary());
 
