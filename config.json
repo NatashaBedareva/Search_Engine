@@ -1,0 +1,14 @@
+{
+  "config": {
+    "name": "search_engine",
+    "version": "0.1",
+    "max_responses": 5
+  },
+  "files": [
+    "C:\\Users\\Bedareva\\Documents\\search_engine\\file\\text01.txt",
+    "C:\\Users\\Bedareva\\Documents\\search_engine\\file\\text02.txt",
+    "C:\\Users\\Bedareva\\Documents\\search_engine\\file\\text03.txt",
+    "C:\\Users\\Bedareva\\Documents\\search_engine\\file\\text04.txt",
+    "C:\\Users\\Bedareva\\Documents\\search_engine\\file\\text05.txt"
+  ]
+}
