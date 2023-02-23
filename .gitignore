@@ -1,3 +1,4 @@
-git rm -r --cached some-directory
-git commit -m 'Remove the now ignored directory "some-directory"'
+git rm -r --cached .idea
+git rm -r --cached .cmake-build-debug
+git commit -m 'Remove the now ignored directory "cmake-build-debug"'
 git push origin master
