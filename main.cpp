@@ -19,8 +19,7 @@ int main() {
         inverted_index.GetWordCount(requests[j]);
     }
 
-    std::thread call(inverted_index.GetWordCount,req1);
-    call.join();
+    
 
 
 
