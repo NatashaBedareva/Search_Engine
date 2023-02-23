@@ -19,7 +19,7 @@ int main() {
         inverted_index.GetWordCount(requests[j]);
     }
 
-    
+
 
 
 
