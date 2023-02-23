@@ -8,10 +8,6 @@
 #include <map>
 #include <thread>
 
-#ifndef SEARCH_ENGINE_INVERTEDINDEX_H
-#define SEARCH_ENGINE_INVERTEDINDEX_H
-
-#endif //SEARCH_ENGINE_INVERTEDINDEX_H
 
 std::string MakeCurrentWay(std::string way){
     std::string current_way="";

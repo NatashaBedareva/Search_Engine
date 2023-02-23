@@ -1,13 +1,11 @@
 #pragma once
-#ifndef SEARCH_ENGINE_SEARCHSERVER_H
-#define SEARCH_ENGINE_SEARCHSERVER_H
 
-#endif //SEARCH_ENGINE_SEARCHSERVER_H
 #include <algorithm>
 #include <vector>
 #include <iostream>
 #include "InvertedIndex.h"
 #include "SearchServer.h"
+
 
 struct RelativeIndex{
     size_t doc_id;
