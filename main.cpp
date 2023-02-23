@@ -17,7 +17,6 @@ int main() {
     for(int j=0;j<requests.size();j++){
         inverted_index.GetWordCount(requests[j]);
     }
-
     std::map<std::string, std::vector<Entry>> freq_dictionary;
     freq_dictionary=inverted_index.GetFreq_dictionary();
 
