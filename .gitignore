@@ -1,30 +1,39 @@
-# Создано https://www.toptal.com/developers/gitignore/api/windows
-# Редактировать в https://www.toptal.com/developers/gitignore?templates=windows
+# Prerequisites
+*.d
 
-### Окна ###
-# Файлы кэша миниатюр Windows
-Большие пальцы.дб
-Thumbs.db: шифруемые ehthumbs
-.db
-ehthumbs_vista.db
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# Файл дампа
-*.stackdump
+# Precompiled Headers
+*.gch
+*.pch
 
-# Конфигурационный файл папки
-[Dd]esktop.ini
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# Корзина, используемая в общих файловых ресурсах
-$КОРЗИНА ДЛЯ МУСОРА/
+# Fortran module files
+*.mod
+*.smod
 
-# Файлы установщика Windows
-* .cab
-*.msi
-*.msix
-*.msm
-*.msp
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
-# Ярлыки Windows
-*.lnk
+# Executables
+*.exe
+*.out
+*.app
+out/
+.vs/
+CMakePresets.json
+*.ilk
+*.pdb
 
-# Конец https://www.toptal.com/developers/gitignore/api/windows
+.vscode/

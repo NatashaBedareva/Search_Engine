@@ -6,17 +6,24 @@
 #include "InvertedIndex.h"
 #include "ConverterJSON.h"
 
+#include <thread>
 int main() {
     ConverterJSON converter;
 
     InvertedIndex inverted_index;
     inverted_index.UpdateDocumentBase(converter.GetTextDocuments());
     std::vector<std::string> requests=converter.GetRequests();
-
+    std::string req1=requests[1];
 
     for(int j=0;j<requests.size();j++){
         inverted_index.GetWordCount(requests[j]);
     }
+
+    std::thread call(inverted_index.GetWordCount,req1);
+    call.join();
+
+
+
     std::map<std::string, std::vector<Entry>> freq_dictionary;
     freq_dictionary=inverted_index.GetFreq_dictionary();
 
