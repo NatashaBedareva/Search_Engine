@@ -1,7 +1,7 @@
 #include "ConverterJSON.h"
 
 std::vector<std::string> ConverterJSON::GetTextDocuments(){
-    std::ifstream file("C:\\Users\\Bedareva\\Documents\\search_engine\\config.json");
+    std::ifstream file("../config.json");
     nlohmann::json dict;
     std::vector<std::string> vector;
     try{
@@ -32,7 +32,7 @@ std::vector<std::string> ConverterJSON::GetTextDocuments(){
 }
 
 int ConverterJSON::GetResponsesLimit(){
-    std::ifstream file("C:\\Users\\Bedareva\\Documents\\search_engine\\config.json");
+    std::ifstream file("../config.json");
     nlohmann::json dict;
     try {
         if(!file){
@@ -48,7 +48,7 @@ int ConverterJSON::GetResponsesLimit(){
     return 0;
 }
 std::vector<std::string> ConverterJSON::GetRequests(){
-    std::ifstream file("C:\\Users\\Bedareva\\Documents\\search_engine\\requests.json");
+    std::ifstream file("../requests.json");
     nlohmann::json dict;
     std::vector<std::string> vector;
     try {
@@ -82,7 +82,7 @@ std::vector<std::string> ConverterJSON::GetRequests(){
 }
 
 void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers){
-    std::ofstream file("C:\\Users\\Bedareva\\Documents\\search_engine\\answers.json");
+    std::ofstream file("../answers.json");
     try {
         if(!file){
             throw ThePathIsNotSpecifiedCorrectly();
